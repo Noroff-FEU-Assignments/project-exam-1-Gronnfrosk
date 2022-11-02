@@ -1,7 +1,51 @@
-
-
+.search h1 {
+    margin-bottom: 0;
+}
+.search p {
+    width: 250px;
+    margin: 0 auto 30px auto;
+}
+.blogList {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;    
+}
+.blogContainer {
+    width: 270px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.288);
+}
+.search {
+    text-align: center;
+    margin: 100px auto 50px auto;
+}
+input {
+    width: 400px;
+    border: solid .5px #5f2b7b;
+    height: 48px; 
+    font-size: 1.2em;
+    font-family: 'Lora', serif;
+    position: relative;
+    left: 5px;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #5f2b7b;
+}
+.more {
+    text-align: center;
+    margin: 30px 0 200px 0;
+}
 /*mobile styles*/
-@media only screen and (max-width: 990px) {}
+@media only screen and (max-width: 990px) {
+    input {
+        width: 275px;
+        margin-bottom: 20px
+    }
+}
 
 /*desktop/tablet styles*/
 @media only screen and (min-width: 991px) {

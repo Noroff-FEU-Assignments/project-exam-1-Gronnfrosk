@@ -23,6 +23,7 @@ nav {
         height: 50px;
         top: 0;
         position: fixed;
+        z-index: 2;
 }
 /* button styles */
 button {
