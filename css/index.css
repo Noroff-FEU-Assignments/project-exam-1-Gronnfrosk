@@ -1,7 +1,25 @@
-
-
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+header .fa-paw {
+    font-size: 2em;
+    margin: 0 10px;
+}
+.home_page {
+    width: 100%;
+}
+.slogan {
+    text-align: center;
+}
 /*mobile styles*/
 @media only screen and (max-width: 990px) {}
 
 /*desktop/tablet styles*/
-@media only screen and (min-width: 991px) {}
+@media only screen and (min-width: 991px) {
+    nav {
+        background-color: #f2f2f2
+    }
+}

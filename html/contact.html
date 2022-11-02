@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/global.css" />
+		<link rel="stylesheet" href="/css/contact.css" />
+		<script src="https://kit.fontawesome.com/fecd9f1338.js" crossorigin="anonymous"></script>
+		<!-- Hotjar Tracking Code for Project exam 1 -->
+		<script>
+			(function (h, o, t, j, a, r) {
+				h.hj =
+					h.hj ||
+					function () {
+						(h.hj.q = h.hj.q || []).push(arguments);
+					};
+				h._hjSettings = { hjid: 3225932, hjsv: 6 };
+				a = o.getElementsByTagName("head")[0];
+				r = o.createElement("script");
+				r.async = 1;
+				r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+		</script>
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap" rel="stylesheet" />
+		<title>Contact page</title>
+	</head>
+	<body>
+		<nav>
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<div class="nav_list">
+				<a href="/index.html" class="nav_link">Home</a>
+				<a href="/html/About.html" class="nav_link">About</a>
+				<a href="/html/bloglist.html" class="nav_link">Archive</a>
+				<a href="/html/contact.html" class="nav_link"><b>Contact</b></a>
+			</div>
+		</nav>
+		<main>
+			<img src="/pictures/about2.jpg" alt="The dog Goldy at the beach getting wet" />
+			<div class="blockBlock"><div class="decorative"></div></div>
+			<div class="contactInfo">
+				<h1>Contact me</h1>
+				<p>If you are wondering about something, fill out the form below and i will answer as fast as my paws allow it.</p>
+			</div>
+			<form id="contactForm" class="contactForm">
+				<div class="formInput">
+					<label>
+						Full name (minimum 5 characters)
+						<input name="fullName" id="fullName" />
+					</label>
+					<div class="form-error" id="fullNameError">Please enter your name at least 5 characters</div>
+				</div>
+
+				<div class="formInput">
+					<label>
+						Email (required)
+						<input name="email" id="email" />
+					</label>
+					<div class="form-error" id="emailError">Please enter a valid email address</div>
+				</div>
+
+				<div class="formInput">
+					<label>
+						Subject (minimum 15 characters)
+						<input name="subject" id="subject" />
+					</label>
+					<div class="form-error" id="subjectError">Your subject must be at least 15 characters</div>
+				</div>
+
+				<div class="formInput">
+					<label>
+						Message (minimum 25 characters)
+						<textarea name="Message" id="message" cols="34" rows="7"></textarea>
+					</label>
+					<div class="form-error" id="messageError">Your message must be at least 25 characters</div>
+				</div>
+				<button class="btn">Send</button>
+			</form>
+		</main>
+		<footer>
+			<div class="img_footer">
+				<img src="/pictures/grilanddog.PNG" alt="icon of dog and owner" />
+			</div>
+			<div class="backTop">
+				<a href="#"><i class="fa-sharp fa-solid fa-angles-up"></i></a>
+				<p>Back to top</p>
+			</div>
+		</footer>
+		<script src="/javascript/global.js"></script>
+		<script src="/javascript/contact.js"></script>
+	</body>
+</html>

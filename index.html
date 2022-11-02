@@ -24,14 +24,52 @@
 			})(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
 		</script>
 		<!-- Google fonts -->
-		<title>Homepage</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap" rel="stylesheet" />
+		<title>Home page</title>
 	</head>
 	<body>
-		<header></header>
-		<main><i class="fa-duotone fa-blog"></i></main>
+		<nav>
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<div class="nav_list">
+				<a href="index.html" class="nav_link"><b>Home</b></a>
+				<a href="/html/About.html" class="nav_link">About</a>
+				<a href="/html/bloglist.html" class="nav_link">Archive</a>
+				<a href="/html/contact.html" class="nav_link">Contact</a>
+			</div>
+		</nav>
+		<header>
+			<h1>Goldy, The golden retriever</h1>
+			<i class="fa-solid fa-paw"></i>
+		</header>
+		<img src="/pictures/home_page.png" alt="The golden retriever Goldy standing on stones" class="home_page" />
+		<main>
+			<section class="slogan">
+				<h2>Explore together with Goldy</h2>
+				<i class="fa-light fa-bone"></i>
+				<i class="fa-light fa-bone"></i>
+				<i class="fa-light fa-bone"></i>
+			</section>
+			<section>
+				<h3>Latest posts</h3>
+				<div class="latest_post"></div>
+			</section>
+		</main>
 		<footer>
-			<p>&copy;Copyright 2022 Hanna Fjeldsaa</p>
+			<div class="img_footer">
+				<img src="/pictures/grilanddog.PNG" alt="icon of dog and owner" />
+			</div>
+			<div class="backTop">
+				<a href="#"><i class="fa-sharp fa-solid fa-angles-up"></i></a>
+				<p>Back to top</p>
+			</div>
 		</footer>
-		<script src="/js/index.js"></script>
+		<script src="/javascript/global.js"></script>
+		<script src="/javascript/index.js"></script>
 	</body>
 </html>
