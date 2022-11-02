@@ -28,7 +28,7 @@ hr {
     margin-top: 50px;
 }
 /*mobile styles*/
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 780px) {
     .description {
         flex-direction: column;
 
@@ -40,12 +40,13 @@ hr {
 }
 
 /*desktop/tablet styles*/
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 781px) {
     body {
         background-color: #f2f2f2
     }
     .description {
         justify-content: center;
+        margin: 0 15px;
     }
     .profile_container {
         background-color: white;
@@ -58,6 +59,9 @@ hr {
     .description div{
         width: 50%;
         max-width: 340px;
+    }
+    .profile .bones {
+        margin: 0;
     }
     .bones {
         margin: auto;

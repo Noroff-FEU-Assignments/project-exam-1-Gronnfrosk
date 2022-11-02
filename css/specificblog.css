@@ -1,7 +1,40 @@
-
-
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white
+}
+#image {
+    transition: all 1s ease;
+}
+#image:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+    transition: all 0.5s ease-in-out;
+}
+main p {
+    width: 310px;
+}
+.date {
+    text-align: center;
+}
 /*mobile styles*/
-@media only screen and (max-width: 990px) {}
+@media only screen and (max-width: 780px) {
+    main img {
+        width: 70%;
+    }
+}
 
 /*desktop/tablet styles*/
-@media only screen and (min-width: 991px) {}
+@media only screen and (min-width: 781px) {
+    body {
+        background-color: #f2f2f2
+    }
+    .image {
+        width: 30%;
+        transition: all 0.5s ease;
+    }
+   
+}

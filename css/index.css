@@ -3,6 +3,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 0 20px;
 }
 header .fa-paw {
     font-size: 2em;
@@ -14,12 +15,58 @@ header .fa-paw {
 .slogan {
     text-align: center;
 }
+.blogContainer {
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.288);
+    width: fit-content;
+}
+.blogContainer p {
+ margin-bottom: 0px;
+ margin-top: 5px;
+}
+.blogContainer h3 {
+padding-bottom: 10px;
+margin-top: 10px;
+}
+.latest_post {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        overflow: hidden;
+    } 
+
+
 /*mobile styles*/
-@media only screen and (max-width: 990px) {}
+@media only screen and (max-width: 780px) {
+    h3 {
+        margin-left: 20px
+    }
+    .blogContainer {
+        margin: 0 20px;
+
+    }
+}
 
 /*desktop/tablet styles*/
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 781px) {
     nav {
         background-color: #f2f2f2
     }
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .swiper-button-prev {
+    position: relative;
+    left: -30px;
+    top: -275px;
+    font-size: 2em;
+}
+.swiper-button-next {
+    position: relative;
+    float: right;
+    top: -312px;
+    font-size: 2em;
+    right: -31px;
+}
 }

@@ -55,14 +55,14 @@ button {
 }
 
 /*mobile styles*/
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 780px) {
     main {
         justify-content: center;
     }
 }
 
 /*desktop/tablet styles*/
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 781px) {
     body {
         background-color: #F2F2F2;
     }

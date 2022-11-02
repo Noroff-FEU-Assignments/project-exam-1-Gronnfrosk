@@ -1,7 +1,7 @@
 const blogList = document.querySelector(".blogList");
 const searchButton = document.querySelector(".search_button");
 const more = document.querySelector("#more");
-const url = "https://gronnfrosk.one/project//wp-json/wc/store/products";
+const url = "https://gronnfrosk.one/project/wp-json/wc/store/products";
 
 async function renderBlogs(url) {
 	const response = await fetch(url);
