@@ -1,6 +1,6 @@
 const containerLatest = document.querySelector(".latest_post");
 
-const url = "https://gronnfrosk.one/project/wp-json/wc/store/products";
+const url = "https://gronnfrosk.one/project/wp-json/wc/store/products?per_page=12";
 
 async function renderBlogs(url) {
 	const response = await fetch(url);
@@ -19,3 +19,16 @@ async function renderBlogs(url) {
 	});
 }
 renderBlogs(url);
+
+// slideshow list
+const slideContainer = document.querySelector("#latest_post");
+const prevButton = document.querySelector(".swiper-button-prev");
+const nextButton = document.querySelector(".swiper-button-next");
+
+prevButton.onclick = () => {
+	slideContainer.scrollLeft -= 290;
+};
+
+nextButton.onclick = () => {
+	slideContainer.scrollLeft += 290;
+};
