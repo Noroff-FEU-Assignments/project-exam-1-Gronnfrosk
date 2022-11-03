@@ -6,13 +6,11 @@
     margin: 0 auto;
     background-color: white
 }
-#image {
-    transition: all 1s ease;
-}
+
 #image:hover {
     cursor: pointer;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
 }
 main p {
     width: 310px;
@@ -23,8 +21,12 @@ main p {
 /*mobile styles*/
 @media only screen and (max-width: 780px) {
     main img {
+        width: 100%;
+    }
+    .image {
         width: 70%;
     }
+    
 }
 
 /*desktop/tablet styles*/
@@ -32,9 +34,11 @@ main p {
     body {
         background-color: #f2f2f2
     }
+    main img {
+        width: fit-content;
+    }
     .image {
         width: 30%;
-        transition: all 0.5s ease;
     }
    
 }
