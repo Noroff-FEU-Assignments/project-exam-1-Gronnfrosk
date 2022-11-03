@@ -9,7 +9,7 @@ const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 
 function validateForm(event) {
-	//event.preventDefault();
+	event.preventDefault();
 
 	if (checkLength(fullName.value, 4) === true) {
 		fullNameError.style.display = "none";

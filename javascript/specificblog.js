@@ -24,7 +24,6 @@ if (id === null) {
 }
 
 // Modal picture
-
 function imageModal() {
 	const image = document.querySelector("#image");
 	if (image.classList.contains("image")) {
@@ -35,9 +34,3 @@ function imageModal() {
 		image.classList.add("image");
 	}
 }
-
-//function enlargeImg(img) {
-//	img.style.transform = "scale(2)";
-//	img.style.transition = "transform 0,25s ease";
-//}
-// onclick="enlargeImg(this)"

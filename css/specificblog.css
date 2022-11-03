@@ -20,6 +20,9 @@ main p {
 }
 /*mobile styles*/
 @media only screen and (max-width: 780px) {
+    .container {
+        width: 80%
+    }
     main img {
         width: 100%;
     }
