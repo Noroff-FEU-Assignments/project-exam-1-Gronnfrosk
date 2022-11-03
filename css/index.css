@@ -61,7 +61,9 @@ header .fa-paw {
     opacity: 1;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.288);
 } 
-
+footer {
+    width: 100%;
+}
 /*mobile styles*/
 @media only screen and (max-width: 780px) {
     h3 {
@@ -120,7 +122,5 @@ header .fa-paw {
         top: -339px;
         right: -31px;
 }
-footer {
-    width: 100%;
-}
+
 }
