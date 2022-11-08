@@ -29,7 +29,7 @@ searchButton.onclick = function () {
 
 // more
 more.onclick = function (event) {
-	const newUrl = url + "?per_page=20";
+	const newUrl = url + "?per_page=15";
 	blogList.innerHTML = "";
 	renderBlogs(newUrl);
 	more.style.display = "none";

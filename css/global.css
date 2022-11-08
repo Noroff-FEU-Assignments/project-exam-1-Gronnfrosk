@@ -88,7 +88,7 @@ footer p {
         cursor: pointer;
         display: block;
         float: right;
-        padding: 10px;
+        padding: 10px 25px;
     }
    .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -110,8 +110,12 @@ footer p {
         margin: 100px auto 0 auto;
     }
     .img_footer {
-        height: 327px;
+        height: 294px;
         text-align: center;
+       
+    } 
+    footer img {
+        width: 300px;
     }
 }
 
