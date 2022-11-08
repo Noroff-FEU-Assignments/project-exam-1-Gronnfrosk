@@ -40,8 +40,12 @@ button:hover {
     cursor: pointer;
 }
 /* Footer */
-footer img {
-    width: 350px;
+.bottom_img {
+    background-image: url(/pictures/grilanddog.PNG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 197px;
+    background-position: center;
 }
 footer {
     display: flex;
@@ -106,11 +110,9 @@ footer p {
     .backTop {
         padding-top: 50px;
     }
-    footer img {
-        margin: 100px auto 0 auto;
-    }
     .img_footer {
-        height: 294px;
+        padding-top: 100px;
+        height: 197px;
         text-align: center;
        
     } 
@@ -150,7 +152,7 @@ footer p {
      .img_footer {
         width: 70%;
         background-color: white; 
-        height: 227px;
+        height: 197px;
         padding-top: 100px;
      }
      .backTop {

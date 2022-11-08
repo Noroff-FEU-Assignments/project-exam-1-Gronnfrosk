@@ -1,3 +1,4 @@
+/* Header */
 header {
     display: flex;
     flex-direction: row;
@@ -21,10 +22,15 @@ header .fa-paw {
 .fa-bone {
     font-size: 1.5em;
 }
+/* SlideShow/carousel */
 .blogContainer {
     text-align: center;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.288);
     width: fit-content;
+}
+.blogContainer a {
+    text-decoration: none;
+    color: black;
 }
 .blogContainer p {
  margin-bottom: 0px;
@@ -88,6 +94,7 @@ header .fa-paw {
 .favorites-container img:nth-child(3) {
     order: 1;
 }
+/* Footer */
 .favorites img {
     border: solid 50px #f2f2f2;
     border-style: double;
@@ -123,7 +130,7 @@ footer {
         width: 1.3em;
         height: 1.3em;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.288);
-}
+    }
     .favorites {
         margin: 50px auto;
     }
@@ -156,5 +163,5 @@ footer {
         float: right;
         top: -339px;
         right: -31px;
-}
+    }
 }

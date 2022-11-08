@@ -35,9 +35,10 @@ async function renderBlogs(url) {
 		containerLatest.innerHTML += `
         <div class="slider">
             <div class="blogContainer">
-                <a href="/html/specificblog.html?id=${blog.id}"><img src="${blog.images[0].src}" class="product-img"></a>
-                <p>${blog.attributes[0].terms[0].name}</p>
-                <h3>${blog.name}</h3>
+                <a href="/html/specificblog.html?id=${blog.id}"><img src="${blog.images[0].src}" class="product-img">
+                    <p>${blog.attributes[0].terms[0].name}</p>
+                    <h3>${blog.name}</h3>
+                </a>
             </div>
         </div>    
         `;
