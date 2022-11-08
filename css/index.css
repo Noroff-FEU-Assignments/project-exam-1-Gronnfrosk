@@ -5,6 +5,9 @@ header {
     align-items: center;
     margin: 0 20px;
 }
+.header p {
+    font-family: 'Consolas', sans-serif;
+}
 header .fa-paw {
     font-size: 2em;
     margin: 0 10px;
@@ -14,6 +17,9 @@ header .fa-paw {
 }
 .slogan {
     text-align: center;
+}
+.fa-bone {
+    font-size: 1.5em;
 }
 .blogContainer {
     text-align: center;
