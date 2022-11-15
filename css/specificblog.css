@@ -31,6 +31,7 @@ textarea {
     border: 4px double #5f2b7b;
     font-size: 1.2em;
     font-family: 'Lora', serif;
+    height: 125px
 }
 .comments div {
     border: 10px solid #f2f2f2;
