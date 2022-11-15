@@ -18,6 +18,35 @@ main p {
 .date {
     text-align: center;
 }
+/* Comment section*/
+.comments_container {
+    order: 4;
+    width: 70%;
+    border-left: 5px solid #5f2b7b;
+    padding-left: 30px;
+}
+
+textarea {
+    width: 100%;
+    border: 4px double #5f2b7b;
+    font-size: 1.2em;
+    font-family: 'Lora', serif;
+}
+.comments div {
+    border: 10px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin: 30px 0 0 30px;
+    font-size: 1.2em;
+}
+.comments p {
+    margin-top: 5px;
+    float: right;
+}
+.comment-form {
+    margin-top: 50px;
+}
+
 /*mobile styles*/
 @media only screen and (max-width: 780px) {
     .container {

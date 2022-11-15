@@ -51,3 +51,26 @@ function validateEmail(email) {
 	const patternMatches = regEx.test(email);
 	return patternMatches;
 }
+
+//post data to Api
+const formEl = document.querySelector(".contactForm");
+form.addEventListener("submit", (event) => {
+	const formData = new FormData(formEl);
+	const data = Object.fromEntries(formData);
+	console.log(data);
+	fetch("https://gronnfrosk.one/project/wp-json/wp/v2/pages", {
+		method: "POST",
+		headers: {
+			"content-type": "application/json",
+			Authorization: "basic " + btoa("admin:M4GG t19d G8yT ixvh WIRO 1Nkz"),
+		},
+		body: JSON.stringify({
+			title: "Yet another contact form",
+			content: "Fullname: " + data.FullName + "<br>" + "email: " + data.Email + "<br>" + "Subject: " + data.Subject + "<br>" + "Message: " + data.Message,
+			status: "publish",
+		}),
+	})
+		.then((response) => response.json())
+		.then((data) => console.log(data))
+		.catch((error) => console.log(error));
+});

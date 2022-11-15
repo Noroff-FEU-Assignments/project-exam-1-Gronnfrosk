@@ -34,3 +34,42 @@ function imageModal() {
 		image.classList.add("image");
 	}
 }
+// previous comments
+const urlComments = "https://gronnfrosk.one/project/wp-json/wp/v2/posts";
+
+async function fetchComments() {
+	const addComment = document.querySelector(".comments");
+	const response = await fetch(urlComments);
+	const comments = await response.json();
+
+	for (let i = 0; i < comments.length; i++) {
+		addComment.innerHTML += `<div>${comments[i].title.rendered}</div>
+								<p>Date: ${comments[i].date}</p>
+                            `;
+	}
+}
+fetchComments();
+
+// comments
+function store() {
+	const text = document.getElementById("text-area-first").value;
+	const addComment = document.querySelector(".textSaved");
+
+	addComment.innerHTML += `<p>${text}</p>`;
+
+	fetch("https://gronnfrosk.one/project/wp-json/wp/v2/posts", {
+		method: "POST",
+		headers: {
+			"content-type": "application/json",
+			Authorization: "basic " + btoa("admin:M4GG t19d G8yT ixvh WIRO 1Nkz"),
+		},
+		body: JSON.stringify({
+			title: text,
+			content: "Comment: Yet another comment",
+			status: "publish",
+		}),
+	})
+		.then((response) => response.json())
+		.then((data) => console.log(data))
+		.catch((error) => console.log(error));
+}
