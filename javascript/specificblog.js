@@ -35,12 +35,35 @@ function imageModal() {
 	}
 }
 
+// previous comments
+const urlComments = "https://gronnfrosk.one/project/wp-json/wp/v2/posts";
+const addCom = document.querySelector(".comments");
+
+async function fetchComments() {
+	const response = await fetch(urlComments);
+	const comments = await response.json();
+	console.log(comments);
+	addCom.innerHTML = "";
+
+	for (let i = 0; i < comments.length; i++) {
+		addCom.innerHTML += `<div>${comments[i].title.rendered}</div>
+								<p>Date: ${comments[i].date}</p>
+	                        `;
+	}
+}
+fetchComments();
+
+if (addCom.innerHTML === "") {
+	addCom.innerHTML += `<div class="commentsError">Ops! Could not load comments. Try refreshing your browser.</div>
+	                        `;
+}
+
 // comments
 function store() {
 	const text = document.getElementById("text-area-first").value;
-	const addComment = document.querySelector(".textSaved");
+	const addComment = document.querySelector(".comments");
 
-	addComment.innerHTML += `<p>${text}</p>`;
+	addComment.innerHTML += `<div>${text}</div>`;
 
 	fetch("https://gronnfrosk.one/project/wp-json/wp/v2/posts", {
 		method: "POST",
@@ -58,19 +81,3 @@ function store() {
 		.then((data) => console.log(data))
 		.catch((error) => console.log(error));
 }
-
-// previous comments
-const urlComments = "https://gronnfrosk.one/project/wp-json/wp/v2/posts";
-
-async function fetchComments() {
-	const addComment = document.querySelector(".comments");
-	const response = await fetch(urlComments);
-	const comments = await response.json();
-
-	for (let i = 0; i < comments.length; i++) {
-		addComment.innerHTML += `<div>${comments[i].title.rendered}</div>
-								<p>Date: ${comments[i].date}</p>
-                            `;
-	}
-}
-fetchComments();

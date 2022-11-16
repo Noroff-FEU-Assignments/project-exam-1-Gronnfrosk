@@ -24,6 +24,7 @@ main p {
     width: 70%;
     border-left: 5px solid #5f2b7b;
     padding-left: 30px;
+    margin:50px 0;
 }
 textarea {
     width: 100%;
@@ -34,10 +35,10 @@ textarea {
 }
 .comments div {
     border: 10px solid #f2f2f2;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 10px 5px;
-    margin: 30px 0 0 30px;
-    font-size: 1.2em;
+    margin: 50px 0 0 30px;
+    font-size: 1em;
 }
 .comments p {
     margin-top: 5px;
@@ -49,6 +50,11 @@ textarea {
 .button {
     text-align: center; 
     margin-top: 10px;
+}
+.comments .commentsError {
+    color: red;
+    border: none;
+    font-size: 1.5em;
 }
 
 /*mobile styles*/
@@ -62,7 +68,9 @@ textarea {
     .image {
         width: 70%;
     }
-    
+    .comments div {
+        margin-left: 0;
+    }
 }
 
 /*desktop/tablet styles*/
