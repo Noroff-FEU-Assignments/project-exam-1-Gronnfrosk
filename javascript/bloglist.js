@@ -10,7 +10,7 @@ async function renderBlogs(url) {
 	results.forEach(function (blog) {
 		blogList.innerHTML += `
         <div class="blogContainer">
-            <a href="/html/specificblog.html?id=${blog.id}"><img src="${blog.images[0].src}" class="product-img"></a>
+            <a href="/html/specificblog.html?id=${blog.id}" text="A specific post"><img src="${blog.images[0].src}" class="product-img" alt="Post of Goldy"></a>
             <p>${blog.attributes[0].terms[0].name}</p>
             <h3>${blog.name}</h3>
         </div>
