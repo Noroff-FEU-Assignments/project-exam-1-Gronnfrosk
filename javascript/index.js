@@ -64,9 +64,9 @@ async function renderFavorite(otherUrl) {
 
 	fav.innerHTML += `
 		    <div class="favorites-container">    
-                <img src="${favorites[2].source_url}" alt="Goldy's favorite toy bone">
-                <img src="${favorites[0].source_url}" alt="Goldy's favorite snack, called fresh kisses">
-                <img src="${favorites[1].source_url}" alt="Goldy's best dog friend">
+                <img src="${favorites[3].source_url}" alt="Goldy's favorite toy bone">
+                <img src="${favorites[1].source_url}" alt="Goldy's favorite snack, called fresh kisses">
+                <img src="${favorites[2].source_url}" alt="Goldy's best dog friend">
             </div>`;
 }
 renderFavorite(otherUrl);
