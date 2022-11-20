@@ -28,7 +28,7 @@ main p {
 textarea {
     width: 100%;
     border: 4px double #5f2b7b;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'Lora', serif;
     height: 125px
 }

@@ -9,7 +9,7 @@ h1 {
     font-family: 'Consolas', sans-serif;
     font-size: 2em;
 }
-p, h2, h3, li ,label{
+p, h2, h3, li ,label, input {
     font-family: 'Lora', serif;
 }
 nav a {
