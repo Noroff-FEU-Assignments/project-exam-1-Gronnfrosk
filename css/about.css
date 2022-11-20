@@ -34,11 +34,10 @@ hr {
 @media only screen and (max-width: 780px) {
     .description {
         flex-direction: column;
-
     }
     .description div{
-        width: 70%;
-        margin: 0 auto;
+        width: 85%;
+        margin: 10px auto;
     }
 }
 
