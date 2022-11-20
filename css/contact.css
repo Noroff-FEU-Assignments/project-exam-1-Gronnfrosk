@@ -21,6 +21,7 @@ h1 {
 }
 .contactInfo p {
     margin-bottom: 30px;
+    line-height: 1.5;
 }
 input {
     width: 96%;

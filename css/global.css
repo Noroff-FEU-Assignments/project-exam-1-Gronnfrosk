@@ -11,6 +11,7 @@ h1 {
 }
 p, h2, h3, li ,label, input {
     font-family: 'Lora', serif;
+    line-height: 1.5;
 }
 nav a {
     font-family: 'Lora', serif;
@@ -60,7 +61,8 @@ footer {
     color: black;
 }
 footer p {
-    text-align: center
+    text-align: center;
+    line-height: 1.5;
 }
 
 /*mobile styles*/
