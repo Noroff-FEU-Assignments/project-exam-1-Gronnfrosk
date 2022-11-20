@@ -24,6 +24,10 @@ searchButton.onclick = function () {
 	const searchInput = document.querySelector("#search_input").value;
 	const newUrl = url + `?search=${searchInput}`;
 	blogList.innerHTML = "";
+	more.style.display = "none";
+	if (searchInput === "") {
+		more.style.display = "inline";
+	}
 	renderBlogs(newUrl);
 };
 
