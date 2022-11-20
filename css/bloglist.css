@@ -37,7 +37,7 @@ input:focus, textarea:focus {
 }
 .more {
     text-align: center;
-    margin: 30px 0 150px 0;
+    margin: 30px 0 50px 0;
 }
 /*mobile styles*/
 @media only screen and (max-width: 780px) {
