@@ -139,8 +139,8 @@ footer {
         width: 80%;
         margin: 0 auto 15px auto;
     }
-    .favorites img {
-        min-width: 200px;
+    .favorites-container img {
+        width: 50%;
     }
 
 }

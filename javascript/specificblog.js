@@ -47,8 +47,8 @@ async function fetchComments() {
 
 	for (let i = 0; i < comments.length; i++) {
 		addCom.innerHTML += `<div>${comments[i].title.rendered}</div>
-								<p>Date: ${comments[i].date}</p>
-	                        `;
+							<p>Date: ${comments[i].date}</p>
+                        `;
 	}
 }
 fetchComments();

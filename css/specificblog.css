@@ -21,7 +21,6 @@ main p {
 /* Comment section*/
 .comments_container {
     order: 4;
-    width: 70%;
     border-left: 5px solid #5f2b7b;
     padding-left: 30px;
     margin:50px 0;
@@ -84,5 +83,7 @@ textarea {
     .image {
         width: 30%;
     }
-   
+    .comments_container {
+        width: 70%;
+    }
 }
