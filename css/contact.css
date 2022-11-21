@@ -36,6 +36,7 @@ input:focus, textarea:focus {
 textarea {
     border-radius: 3px;
     border: solid .5px #5f2b7b;
+    width: 100%;
 }
 .formInput {
 display: flex;
