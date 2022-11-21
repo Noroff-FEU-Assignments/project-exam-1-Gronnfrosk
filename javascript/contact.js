@@ -34,6 +34,15 @@ function validateForm(event) {
 	} else {
 		messageError.style.display = "block";
 	}
+
+	if (
+		fullNameError.style.display === "none" &&
+		emailError.style.display === "none" &&
+		subjectError.style.display === "none" &&
+		messageError.style.display === "none"
+	) {
+		alert("Thank you! Your message has been sent to Goldy.");
+	}
 }
 
 form.addEventListener("submit", validateForm);
@@ -52,7 +61,7 @@ function validateEmail(email) {
 	return patternMatches;
 }
 
-//post data to Api
+// Post data to Api
 const formEl = document.querySelector(".contactForm");
 form.addEventListener("submit", (event) => {
 	const formData = new FormData(formEl);
