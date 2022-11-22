@@ -10,13 +10,16 @@ const url = "https://gronnfrosk.one/project/wp-json/wc/store/products/" + id;
 async function fetchBlog() {
 	const response = await fetch(url);
 	const results = await response.json();
+	const title = document.querySelector("title");
 
 	container.innerHTML += `<img src="${results.images[1].src}" alt="Dog picture" id="image" class="image" onclick="imageModal()">
                             <p class="date">${results.attributes[0].terms[0].name}</p>
                             <h1>${results.name}</h1>
                             <P>${results.description}</p>
                             `;
+	title.innerHTML += `${results.name}`;
 }
+
 fetchBlog();
 
 if (id === null) {
@@ -24,8 +27,10 @@ if (id === null) {
 }
 
 // Modal picture
+
 function imageModal() {
 	const image = document.querySelector("#image");
+
 	if (image.classList.contains("image")) {
 		image.classList.remove("image");
 	} else if (image.classList.contains("")) {

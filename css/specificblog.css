@@ -10,7 +10,7 @@
 #image:hover {
     cursor: pointer;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
-    transition: all 0.5s ease;
+    transition: all 2s ease;
 }
 main p {
     max-width: 400px;
