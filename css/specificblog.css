@@ -6,12 +6,6 @@
     margin: 0 auto;
     background-color: white
 }
-
-#image:hover {
-    cursor: pointer;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
-    transition: all 2s ease;
-}
 main p {
     max-width: 400px;
 }
@@ -63,6 +57,7 @@ textarea {
     }
     main img {
         width: 100%;
+        transition: all 0.5s ease;
     }
     .image {
         width: 70%;
@@ -77,11 +72,13 @@ textarea {
     body {
         background-color: #f2f2f2
     }
-    main img {
-        width: fit-content;
-    }
     .image {
         width: 30%;
+    }
+    #image:hover {
+        cursor: pointer;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+        transition: all 2s ease;
     }
     .comments_container {
         width: 70%;
