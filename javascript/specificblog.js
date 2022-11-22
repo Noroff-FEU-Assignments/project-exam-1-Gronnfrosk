@@ -12,32 +12,32 @@ async function fetchBlog() {
 	const results = await response.json();
 	const title = document.querySelector("title");
 
-	container.innerHTML += `<img src="${results.images[1].src}" alt="Dog picture" id="image" class="image" onclick="imageModal()">
+	container.innerHTML += `<img src="${results.images[1].src}" alt="Dog picture" id="image" class="image">
                             <p class="date">${results.attributes[0].terms[0].name}</p>
                             <h1>${results.name}</h1>
                             <P>${results.description}</p>
                             `;
 	title.innerHTML += `${results.name}`;
+
+	// Modal picture
+	const image = document.querySelector("#image");
+	const main = document.querySelector("main");
+
+	window.onclick = function (event) {
+		if (event.target === image) {
+			image.classList.remove("image");
+		} else if (event.target === main) {
+			image.classList.add("image");
+		} else {
+			image.classList.add("image");
+		}
+	};
 }
 
 fetchBlog();
 
 if (id === null) {
 	location.href = "/index.html";
-}
-
-// Modal picture
-
-function imageModal() {
-	const image = document.querySelector("#image");
-
-	if (image.classList.contains("image")) {
-		image.classList.remove("image");
-	} else if (image.classList.contains("")) {
-		image.classList.add("image");
-	} else {
-		image.classList.add("image");
-	}
 }
 
 // previous comments
