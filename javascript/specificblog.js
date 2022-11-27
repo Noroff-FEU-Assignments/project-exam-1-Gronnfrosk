@@ -22,14 +22,25 @@ async function fetchBlog() {
 	// Modal picture
 	const image = document.querySelector("#image");
 	const main = document.querySelector("main");
+	const dark = document.querySelector(".dark");
+	const cross = document.querySelector(".cross");
 
 	window.onclick = function (event) {
 		if (event.target === image) {
 			image.classList.remove("image");
+			image.classList.add("image_big");
+			dark.classList.add("modal_function");
+			cross.style.display = "block";
 		} else if (event.target === main) {
 			image.classList.add("image");
+			image.classList.remove("image_big");
+			dark.classList.remove("modal_function");
+			cross.style.display = "none";
 		} else {
 			image.classList.add("image");
+			image.classList.remove("image_big");
+			dark.classList.remove("modal_function");
+			cross.style.display = "none";
 		}
 	};
 }
