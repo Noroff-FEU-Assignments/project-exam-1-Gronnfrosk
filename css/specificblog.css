@@ -18,15 +18,16 @@ main p {
     height: 194%;
     z-index: 1;
     background-color: rgba(0,0,0,0.9);
-    overflow: auto;
     transition: all 0.5s;
 }
 .modal_function:hover {
-    cursor: pointer;
+    cursor: zoom-out;
 }
 .image_big {
     z-index: 2;
     position: fixed;
+    margin-top: 50px;
+    cursor: default;
 }
 .cross {
     display: none;
@@ -35,9 +36,6 @@ main p {
     font-family: 'Consolas', sans-serif;
     padding: 0.6em;
     position: absolute;
-}
-.cross:hover {
-    cursor: pointer;
 }
 /* Comment section*/
 .comments_container {
@@ -104,10 +102,10 @@ textarea {
     .image {
         width: 30%;
     }
-    #image:hover {
-        cursor: pointer;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
-        transition: all 2s ease;
+    .image:hover {
+        cursor: zoom-in;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.13);
+        transition: box-shadow .5s ease;
     }
     .cross {
         right: 5px;
