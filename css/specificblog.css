@@ -28,6 +28,7 @@ main p {
     position: fixed;
     margin-top: 50px;
     cursor: default;
+    max-height: 1025px;
 }
 .cross {
     display: none;
