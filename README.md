@@ -1,5 +1,5 @@
 # Blog about the dog, Goldy
-![image](https://user-images.githubusercontent.com/91615712/205661183-4e1958d2-0fbb-4774-9ec0-67934f1e27e6.png)
+![goldydog](https://user-images.githubusercontent.com/91615712/205752711-682d52d5-a400-4657-92e1-fcf5abd9ee1b.png)
 
 This website is a blog about a golden retriever, named Goldy 
 
