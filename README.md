@@ -4,7 +4,7 @@
 This website is a blog about a golden retriever, named Goldy 
 
 ## Description
-This website is built with HTML, CSS and JavaScript while fetching content from a WordPress REST API. The website is responsive and easy to use on a variety of devices. The blog is about the dog Goldy and contains stories about her daily adventures. The blogs architecture contains:
+This blog is about the dog Goldy and contains stories about her daily adventures. The website is built with HTML, CSS and JavaScript while fetching content from a WordPress REST API. The website is responsive and easy to use on a variety of devices and screen sizes. The blogs architecture contains:
 
 1.	**Home page**
       - Cover image of Goldy, latest blog post carousel and Goldys three favorite things.
@@ -20,7 +20,7 @@ This website is built with HTML, CSS and JavaScript while fetching content from 
       - Validation of the contact form as well as saving the details to WordPress.
 
 
-### The website is:
+### More about the website:
 - Following WCAG principles and DRY priciple.
 - Grade(A-F): not graded yet
 
