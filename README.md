@@ -22,7 +22,6 @@ This blog is about the dog Goldy and contains stories about her daily adventures
 
 ### More about the website:
 - Following WCAG principles and DRY priciple.
-- Grade(A-F): not graded yet
 
 ## Built With
 - HTML
