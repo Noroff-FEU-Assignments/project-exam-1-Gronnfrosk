@@ -1,7 +1,7 @@
 # Blog about the dog, Goldy
 ![goldydog](https://user-images.githubusercontent.com/91615712/205752711-682d52d5-a400-4657-92e1-fcf5abd9ee1b.png)
 
-This Noroff exam 1 project is a blog about a golden retriever, named Goldy. 
+This Noroff exam 1 project is a blog about a golden retriever, named Goldy. Live demo site: https://zingy-sherbet-e1fd04.netlify.app/ 
 
 ## Description
 This blog is about the dog Goldy and contains stories about her daily adventures. The website is built with HTML, CSS and JavaScript while fetching content from a WordPress REST API. This website is responsive and easy to use on a variety of devices and screen sizes. The blog should follow WCAG and DRY priciples.
