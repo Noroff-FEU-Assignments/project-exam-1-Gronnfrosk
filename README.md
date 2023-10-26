@@ -4,7 +4,7 @@
 This Noroff exam 1 project is a blog about a golden retriever, named Goldy. Live demo site: https://zingy-sherbet-e1fd04.netlify.app/ 
 
 ## Description
-This blog is about the dog Goldy and contains stories about her daily adventures. The website is built with HTML, CSS and JavaScript while fetching content from a WordPress REST API. This website is responsive and easy to use on a variety of devices and screen sizes. The blog should follow WCAG and DRY priciples.
+This website was the first year exam submission. The task was to design and build a blog where it was possible to see posts and add comments on posts. The posts and comments content are fetching from WordPress REST API. The website focuses on being responsive across screen sizes, follow WCAG principles and DRY principles. No actual products or services are sold on those page.
 
 #### The architecture of website:
 1.	Home page
@@ -32,6 +32,12 @@ Clone the repo through github website or CLI command:
 ```
 git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-Gronnfrosk.git
 ```
+
+### Live server
+For viewing project in your local browser, you can use Live Server extension in VS Code or CLI commands:
+
+1. Run ```npm i live-server``` to install all dependencies.
+2. Write ```npx live-server``` Open [http://localhost:3000](http://localhost:3000) to view project in your browser.
 
 ## Contact
 I can be reached at:
