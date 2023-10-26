@@ -1,10 +1,10 @@
 # Blog about the dog, Goldy
 ![goldydog](https://user-images.githubusercontent.com/91615712/205752711-682d52d5-a400-4657-92e1-fcf5abd9ee1b.png)
 
-This Noroff exam 1 project is a blog about a golden retriever, named Goldy. Live demo site: https://zingy-sherbet-e1fd04.netlify.app/ 
+This Noroff exam 1 project is a blog about a fictional golden retriever, named Goldy. Live demo site: https://zingy-sherbet-e1fd04.netlify.app/ 
 
 ## Description
-This website was the first year exam submission. The task was to design and build a blog where it was possible to see posts and add comments on posts. The posts and comments content are fetching from WordPress REST API. The website focuses on being responsive across screen sizes, follow WCAG principles and DRY principles. No actual products or services are sold on those page.
+This website was the first year exam submission. The task was to design and build a blog where it was possible to see posts and add comments on posts. The posts and comments content are fetching from WordPress REST API. The website focuses on being responsive across screen sizes, follow WCAG principles and DRY principles.
 
 #### The architecture of website:
 1.	Home page
